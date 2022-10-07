@@ -1,0 +1,17 @@
+<p>star works!</p>
+<div class="star-ratings">
+    <div class="fill">
+        <ng-container *ngFor="let n of fullstars">
+            <i class="fa-solid fa-star"></i>
+        </ng-container>
+
+        <div class="fractional" *ngIf="fractional>0">
+            <i class="fa-solid fa-star " [ngStyle]="fractwidth"></i>
+        </div>
+    </div>
+    <div class="empty">
+        <ng-container *ngFor="let n of [1,2,3,4,5]">
+            <i class="fa-solid fa-star"></i>
+        </ng-container>
+    </div>
+</div>
